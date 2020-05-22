@@ -1,0 +1,160 @@
+html,
+body,
+#app {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  background-color: #fff !important;
+  color: black;
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+}
+body{
+  margin: auto !important;
+  width: 100%;
+}
+*{
+  box-sizing: border-box;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clearfix:after {
+  clear: both;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.c1 {
+  color: #40a9ff !important;
+}
+
+
+.c5 {
+  color: #555555 !important;
+}
+
+.c8 {
+  color: #888 !important;
+}
+
+::-webkit-input-placeholder {
+  color: #878d99;
+}
+
+:-moz-placeholder {
+  color: #878d99;
+}
+
+::-moz-placeholder {
+  color: #878d99;
+}
+
+:-ms-input-placeholder {
+  color: #878d99;
+}
+
+
+.mainPage {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* 剩余滚动条样式 */
+
+::-webkit-scrollbar-track-piece {
+  width: 2px;
+  background-color: rgba(255, 255, 255, 1) !important;
+}
+
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(36, 38, 44, 0.6);
+  z-index: 10000;
+}
+
+.b-border {
+  position: relative;
+}
+
+.b-border:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: #d9d9d9;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.t-border {
+  position: relative;
+}
+
+.t-border:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  background-image: linear-gradient(0deg, transparent 50%, #d9d9d9 50%);
+}
+
+.r-border {
+  position: relative;
+}
+
+.r-border:before {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 1px;
+  height: 100%;
+  background-image: linear-gradient(0deg, transparent 50%, #d9d9d9 50%);
+}
+
+.l-border {
+  position: relative;
+}
+
+.l-border:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 1px;
+  height: 100%;
+  /* background-image: linear-gradient(0deg, transparent 50%, #d9d9d9 50%); */
+  background: #d9d9d9;
+  -webkit-transform: scaleX(0.5);
+  transform: scaleX(0.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}

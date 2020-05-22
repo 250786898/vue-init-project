@@ -1,0 +1,195 @@
+@charset "utf-8";
+
+/*！--CSS重置和样式初始化(参考Normalize.css) ~ v1.0--*/
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+button,
+input,
+textarea,
+th,
+td {
+    margin: 0;
+    padding: 0
+}
+
+html {
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    font-style: normal;
+    font-family: "\5FAE\8F6F\96C5\9ED1", Helvetica, sans-serif
+}
+
+h4,
+h5,
+h6 {
+    font-size: 100%
+}
+
+ul,
+ol {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent
+}
+
+a:hover,
+a:active {
+    outline-width: 0;
+    text-decoration: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+hr {
+    border: 0;
+    height: 1px
+}
+
+img {
+    border-style: none
+}
+
+img:not([src]) {
+    display: none
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+input,
+textarea,
+button,
+a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+    outline: none;
+    border: 0;
+}
+
+button,
+input {
+    overflow: visible
+}
+
+button,
+select {
+    text-transform: none
+}
+
+textarea {
+    overflow: auto
+}
+
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto
+}
+
+::-webkit-input-placeholder {
+    color: inherit;
+    opacity: .54
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+.clear:after {
+    display: block;
+    height: 0;
+    content: "";
+    clear: both
+}
+
+a,
+a:active,
+a:visited,
+a:hover,
+a:target {
+    display: block;
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: none;
+    -webkit-backface-visibility: hidden;
+}
+
+input.checkbox {
+    -webkit-appearance: checkbox;
+}
+
+::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+div>img{
+  vertical-align: middle;
+}
+input, textarea{
+  -webkit-user-select: text!important;
+  user-select: text !important;
+  cursor: pointer
+}

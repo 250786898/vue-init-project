@@ -1,0 +1,13 @@
+// 在.babelrc 中添加配置
+{
+  "presets": [
+    "@vue/cli-plugin-babel/preset"
+  ],
+  "plugins": [
+    ["import", {
+      "libraryName": "vant",
+      "libraryDirectory": "es",
+      "style": true
+    }]
+  ]
+}
