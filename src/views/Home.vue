@@ -43,8 +43,9 @@ export default {
     height: 45px;
     line-height: 45px;
     position: relative;
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
+    @include bgGradient;
+    border-bottom: 1px solid $white-color;
+    color: $white-color;
     text-align: left;
   }
 }

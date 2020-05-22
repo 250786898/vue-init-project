@@ -1,0 +1,35 @@
+@mixin ellipsis($rows:1) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  @if ($rows==1)  {white-space: nowrap};
+  @if ($rows>=2) {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $rows;
+  }
+}
+
+@mixin bgGradient($direction:left, $reverse:false) {
+  @if $reverse {
+    background-image: -webkit-linear-gradient($direction,   #12CDCF,#0CE1B3);
+    background-image: linear-gradient($direction,   #12CDCF,#0CE1B3);
+  } @else {
+    background-image: -webkit-linear-gradient($direction,  #12CDCF, #0CE1B3);
+    background-image: linear-gradient($direction,  #12CDCF, #0CE1B3);
+  }
+}
+
+@mixin bgGradientHover($reverse:false) {
+  @if $reverse {
+    background-image: -webkit-linear-gradient(left,  #0CE1B3, #0CE1B3);
+    background-image: linear-gradient(left,  #0CE1B3, #0CE1B3);
+  } @else {
+    background-image: -webkit-linear-gradient(left,  #12CDCF, #12CDCF);
+    background-image: linear-gradient(left,  #12CDCF, #12CDCF);
+  }
+}
+
+@mixin buttonHover() {
+  background-color: rgba(0, 0, 0, 0.1);
+  opacity: 0.7;
+}

@@ -39,7 +39,7 @@ module.exports = {
     // css预设器配置项
     loaderOptions: {
       scss: {
-        prependData: '@import "~@/style/variable.scss";'
+        prependData: '@import "~@/style/main.scss";'
       },
       postcss: {
         plugins: [
